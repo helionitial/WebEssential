@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<p> Click the button to demonstrate the prompt box. </p>
+
+<button onClick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+	var x;
+	var person = prompt("Press enter your name", "Harry Potter");
+	
+	if(person!= null)
+	{
+		x = "Hello" + person + "! How are you today?";
+		document.getElementById("demo").innerHTML = x;
+	}
+}
+</script>
+
+</body>
+</html>

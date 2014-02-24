@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<p>Click the button to display a confirm box. </p>
+<button onClick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+	var x;
+	var r = confirm("Press a button!");
+	if(r == true)
+	{
+		x = "You press OK!";
+	}
+	else
+	{
+		x = "You pressed Cancel!";
+	}
+	document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script>
+function myFunction()
+{
+	alert("Hello, World!");
+}
+
+function myFunction1(name, job)
+{
+	alert("welcome" + name + ", the " + job);
+}
+
+function myFunction2(txt)
+{
+	alert(txt);
+}
+
+function myFunction3()
+{
+	return ("Hello, World!");
+}
+
+function myFunction4(a, b)
+{
+	return a * b;
+}
+	
+</script>
+
+</head>
+<body>
+
+<button onClick="myFunction()">Test myFunction()</button>
+<br>
+<button onClick="myFunction1('Helio', 'God')">Test myFunction1()</button>
+<br>
+
+<form>
+<input type="button" onClick="myFunction2('Good Morning!')" value="In the Morning">
+
+<input type="button" onClick="myFunction2('Good Evening!')" value="In the Evening">
+</form>
+
+<script>
+document.write(myFunction3());
+document.write(myFunction4(2,3));
+</script>
+
+
+
+
+</body>
+</html>

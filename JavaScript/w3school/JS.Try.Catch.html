@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script>
+var txt = "";
+function message()
+{
+	try
+	{
+		adddlert("Welcome guest!");
+	}
+	catch(err)
+	{
+		txt = "there was an error on this page \n\n";
+		txt += "Error description:" + err.message + "\n\n";
+		txt += "Click OK to continue. \n\n";
+		alert(txt);
+	}
+}
+</script>
+
+</head>
+
+<body>
+<input type="button" value="View Message" onClick="message()" />
+</body>
+</html>
